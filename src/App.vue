@@ -1,17 +1,27 @@
 <script setup lang="ts">
+import {watchEffect,ref,type Ref} from "vue"
 import {usePromission} from '@/stores/promission'
-
+import {useFetch} from '@/hooks/useFetch'
+import type { IRquestReturn } from "@/types/request"
 const {changePermCode} = usePromission()
+
+const { data } = useFetch("/api/auth/getUserList")
+
+const userList:Ref<Record<string,string>[]> = ref([])
+
+watchEffect(()=>{
+  userList.value = (data.value as IRquestReturn).data as Record<string,string>[]
+  console.log(userList.value)
+})
 
 changePermCode()
 
 </script>
 
 <template>
-  <header>
+  <div >
 
-  </header>
-
+  </div>
 </template>
 
 <style scoped>
