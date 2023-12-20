@@ -1,4 +1,9 @@
+
+export interface IRquestReturnData{
+    [key: string]: any;
+}
 export interface IRquestReturn{
-    data: Record<string,string> | Record<string,string>[];
+    data: IRquestReturnData | IRquestReturnData[];
     code: number
 }
+
