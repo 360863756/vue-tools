@@ -1,5 +1,5 @@
 import type { IPromissionList } from "@/types/promission";
-import request from "@/util/request";
+import request from "~/src/utils/request";
 
 
 export function getPermCodeListData(){

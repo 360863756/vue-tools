@@ -6,4 +6,3 @@ export interface IRquestReturn{
     data: IRquestReturnData | IRquestReturnData[];
     code: number
 }
-
