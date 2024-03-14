@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@googlemaps/region-lookup':
+    specifier: ^0.0.0
+    version: 0.0.0(axios@1.5.1)
   '@vueuse/core':
     specifier: ^10.7.1
     version: 10.7.1(vue@3.3.6)
@@ -14,6 +17,9 @@ dependencies:
   axios:
     specifier: ^1.5.1
     version: registry.npmmirror.com/axios@1.5.1
+  country-state-city:
+    specifier: ^3.2.1
+    version: 3.2.1
   element-plus:
     specifier: ^2.4.4
     version: 2.4.4(vue@3.3.6)
@@ -318,6 +324,14 @@ packages:
 
   /@floating-ui/utils@0.1.6:
     resolution: {integrity: sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==}
+    dev: false
+
+  /@googlemaps/region-lookup@0.0.0(axios@1.5.1):
+    resolution: {integrity: sha512-vFuG1oGK7bSGqE6/W65WfpurwgeLZPONsmkKxcUZ6JeQOIQY7TKP/bnKnKBH+2fYsLutia5s4IR3YW/QA66zVg==}
+    peerDependencies:
+      axios: ^0.26.0
+    dependencies:
+      axios: registry.npmmirror.com/axios@1.5.1
     dev: false
 
   /@isaacs/cliui@8.0.2:
@@ -667,6 +681,10 @@ packages:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
     engines: {node: '>= 6'}
     dev: true
+
+  /country-state-city@3.2.1:
+    resolution: {integrity: sha512-kxbanqMc6izjhc/EHkGPCTabSPZ2G6eG4/97akAYHJUN4stzzFEvQPZoF8oXDQ+10gM/O/yUmISCR1ZVxyb6EA==}
+    dev: false
 
   /cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}

@@ -13,9 +13,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@googlemaps/region-lookup": "^0.0.0",
     "@vueuse/core": "^10.7.1",
     "@vueuse/integrations": "^10.7.2",
     "axios": "^1.5.1",
+    "country-state-city": "^3.2.1",
     "element-plus": "^2.4.4",
     "mockjs": "^1.1.0",
     "pinia": "^2.1.7",

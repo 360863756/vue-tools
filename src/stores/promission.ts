@@ -14,7 +14,7 @@ export const usePromission = defineStore('promission',()=>{
 
     async function changePermCode(){
         const response = await getPermCodeListData();
-        const data: IPromissionList = response.data;
+        const data: IPromissionList = response;
         console.log(data)
         setPermCodeList(data.promissionList);
     }

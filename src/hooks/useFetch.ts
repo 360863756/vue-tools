@@ -1,8 +1,8 @@
 import { ref, type Ref } from "vue"
-import type { IRquestReturn } from "@/types/request"
+import type { IRquestReturnData } from "@/types/request"
 
 export interface useFetchReturn {
-    data: Ref< IRquestReturn | null>;
+    data: Ref< IRquestReturnData[] | null>;
     error: Ref<any>
 }
 

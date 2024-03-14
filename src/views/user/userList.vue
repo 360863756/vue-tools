@@ -8,10 +8,10 @@ const { changePermCode } = usePromission()
 
 const { data } = useFetch('/api/auth/getUserList')
 
-const userList: Ref<IRquestReturnData> = ref([])
+const userList: Ref<IRquestReturnData[]> = ref([])
 
 watchEffect(() => {
-  userList.value = data.value?.data || []
+  userList.value = data.value || []
 })
 
 changePermCode()
